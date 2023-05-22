@@ -1,0 +1,399 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    border: 0; outline: 0;
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+body{
+    background: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/09/cant-open-settings-app.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5);
+    background-size: cover;
+}
+.robot {
+    border: 10px inset #03d1ff;
+    width: 750px;
+    height: 750px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    background: url(https://img.freepik.com/free-vector/abstract-classic-blue-screensaver_23-2148421853.jpg?w=1800&t=st=1683203653~exp=1683204253~hmac=028d5df3966f1b798088b6baf1a1e88fa684857da5da1bfc45b1ef1804f1c974);
+    border-radius: 20px;
+    animation: robot 2s linear infinite alternate;
+}
+@keyframes robot{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: rotate(-350deg);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+.robot:hover{
+    cursor: pointer;
+}
+.robot:hover .golova{
+    transform: translateY(20px) scale(1.1);
+}
+.golova {
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px 10px 50px 50px;
+    background-color: rgb(0, 157, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+    animation: golova 2s 1s linear infinite alternate;
+}
+@keyframes golova{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        background-color: rgb(247, 255, 12);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.golova::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 10px;
+    background-color: #9b1494;
+    top: -5px;
+    border-radius: 10px 10px 0 0;
+}
+.golova:hover{
+    background-color: rgb(229, 205, 21);
+}
+.ochi {
+    border: 2px solid #ff000074;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 2px;
+    border-radius: 30px;
+}
+.glaz {
+    position: relative;
+    width: 30px;
+    height: 40px;
+    background-color: coral;
+    border-radius: 50px 50px 0 0;
+    margin: 0 10px;
+    transition: 0.5s;
+    animation: glaz 2s linear infinite alternate;
+}
+@keyframes glaz{
+    0%{
+        transform: translateY(8px);
+    }
+    50%{
+        background-color: rgb(161, 18, 232);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+.glaz::before{
+    top: 9px;
+    left: 3px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.glaz::after{
+    top: 11px;
+    left: 5px;
+    position: absolute;
+    content: '';
+    background-color: #0e6f02;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.glaz:hover{
+    transform: scale(1.2) translateY(-15px);
+    background-color: rgb(255, 38, 0);
+}
+.nis {
+    height: 30px;
+    width: 10px;
+    background-color: burlywood;
+    transition: 0.5s;
+    border-radius: 0 0 10px 10px;
+    animation: nis 2s linear infinite alternate;
+    animation-delay: 1s;
+}
+@keyframes nis{
+    0%{
+        transform: translateX(-20px);
+    }
+    50%{
+        background-color: coral;
+        transform: scale(1.5);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+.nis:hover{
+    transform: scale(1.5);
+    background-color: rgb(255, 153, 0);
+}
+.rot {
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: burlywood;
+    margin-top: 10px;
+    transition: 0.5s;
+    animation: rot 2s linear infinite alternate;
+}
+@keyframes rot{
+    0%{
+        transform:translateX(-50px) ;
+    }
+    50%{
+        background-color: greenyellow;
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
+.rot:hover{
+    transform: skew(40deg);
+    background-color: rgb(249, 61, 99);
+}
+.rot:hover{
+    transform: rotate(25deg);
+}
+.tilo {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 20px 50px 50px;
+    background-color: rgb(167, 30, 235);
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    animation: tilo 2s 1s linear infinite alternate;
+}
+@keyframes tilo{
+    0%{
+        transform: translateX(30px);
+    }
+    50%{
+        background-color: rgb(214, 15, 15);
+    }
+    100%{
+        transform: translateX(-30px);
+    }
+}
+.tilo::before{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: rgb(18, 203, 18);
+    border-radius: 10px 10px 40px 40px;
+    top: 25px;
+    left: 25px;
+}
+.robot:hover .tilo{
+    transform: scale(0.8);
+}
+.tilo:hover{
+    background-color: darkorange;
+}
+.left-ruka {
+    width: 50px;
+    height: 250px;
+    background-color: #0e6f02;
+    margin-left: 250px;
+    border-radius: 10px;
+    transition: 0.4s;
+    position: relative;
+    animation: leftruka 2s 1s linear infinite alternate;
+}
+@keyframes leftruka{
+    0%{
+        transform: translateY(30px);
+    }
+    50%{
+        background-color: darkblue;
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+.left-ruka:hover{
+    background-color: coral;
+    transform: translate(20px) scale(1.1);
+}
+.left-ruka::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: aqua;
+    right: 15px;
+}
+.left-ruka::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: rgb(114, 20, 255);
+    left: 15px;
+    top: 190px;
+}
+.puzo {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(186, 160, 10);
+    transition: 0.4s;
+    animation: puzo 2s 2s linear infinite alternate
+}
+@keyframes puzo{
+    0%{
+        transform: translateX(30px);
+    }
+    50%{
+        background-color: rgb(214, 15, 15);
+        transform: skew(20deg);
+    }
+    100%{
+        transform: translateX(-30px);
+    }
+}
+.puzo:hover{
+    background-color: rgb(173, 96, 203);
+}
+.right-ruka {
+    width: 50px;
+    height: 250px;
+    background-color: brown;
+    margin-left: -50px;
+    margin-top: -290px;
+    border-radius: 10px;
+    transition: 0.4s;
+    position: relative;
+    animation: rightruka 2s 1s linear infinite alternate;
+}
+@keyframes rightruka{
+    0%{
+        transform: translateY(30px);
+    }
+    50%{
+        background-color: rgb(209, 209, 22);
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+.right-ruka:hover{
+    background-color: rgb(235, 88, 14);
+    transform: translate(-20px) scale(1.1);
+}
+.right-ruka::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: deepskyblue;
+    left: 15px;
+}
+.right-ruka::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: gold;
+    top: 190px;
+    right: 15px;
+}
+.nizhki {
+    display: flex;
+}
+.left-noga {
+    width: 50px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transition: 0.4s;
+    animation: leftnoga 2s 1s linear infinite alternate;
+}
+@keyframes leftnoga{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        background-color: rgb(148, 15, 214);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+.right-noga {
+    width: 50px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transition: 0.4s;
+    animation: rightnoga 2s 1.5s linear infinite alternate;
+}
+@keyframes rightnoga{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        background-color: rgb(214, 15, 187);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+.left-noga:hover{
+    transform: translate(-15px);
+}
+.right-noga:hover{
+    transform: translate(15px);
+}
+.boots{
+    width: 150px;
+    height: 50px;
+    background-color: #9a0404;
+    transition: 0.4s;
+    animation: boots 3s 3s linear infinite alternate;
+}
+@keyframes boots{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        background-color: rgb(15, 214, 174);
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+}
+.boots:hover{
+    background-color: chartreuse;
+    transform: scale(1.2);
+}
